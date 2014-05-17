@@ -7,7 +7,7 @@ Ext.define('MyApp.controller.Navigation', {
     },
     
     refs: [
-        { ref: 'tField', selector: 'textfield'}
+        { ref: 'tField', selector: 'textfield[content]'}
     ],
 
     onUsers: function() {
