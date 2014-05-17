@@ -192,6 +192,41 @@
                 <section data-transition="linear">
                     <h2><a href="demo/routing/">Routing Demo</a></h2>
                 </section>
+                
+                <section>
+                    <h3>Hash Parameter Formatting</h3>
+<pre><code>
+    routes : {
+        'user/:id' : {
+            action     : 'onUser',
+            conditions : {
+                ':id' : '([0-9]+)'
+            }
+        }
+    }
+</code></pre>
+                </section>
+                
+                <section>
+                    <h3>Route Handling</h3>
+<pre><code>
+    routes : {
+        'user/:id' : {
+            before  : 'onBeforeUser',
+            action  : 'onUser'
+        }
+    },
+    onBeforeUser : function(id, action) {
+        Ext.Ajax.request({
+            url     : '/security/user/' + id,
+            success : function() {
+                action.resume();
+            }
+        });
+    },
+    onUser : function(id) {...}
+</code></pre>
+                </section>
 
                 <section data-transition="linear">
                     <h2><a href="demo/widget/">Widget Demo</a></h2>
