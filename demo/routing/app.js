@@ -23,6 +23,7 @@ Ext.application({
                 items: {
                     xtype: 'textfield',
                     fieldLabel: 'Current user id',
+                    content: true,
                     labelWidth: 150
                 }
             }]
