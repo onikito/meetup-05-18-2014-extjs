@@ -5,12 +5,16 @@ Ext.define('MyApp.controller.Navigation', {
         'users': 'onUsers',
         'user/:id': 'onUser'
     },
+    
+    refs: [
+        { ref: 'tField', selector: 'textfield'}
+    ],
 
     onUsers: function() {
-        console.log('Users');
+        this.getTField().setValue('Users');
     },
 
     onUser: function(id) {
-        console.log('User#' + id)
+        this.getTField().setValue('User #'+id);
     }
 });
