@@ -16,12 +16,13 @@ Ext.application({
             },
             items: [{
                 xtype: 'panel',
-                title: 'Hash',
+                title: 'Routing Demo',
                 width: 400,
                 height: 200,
+                bodyPadding: 10,
                 items: {
                     xtype: 'textfield',
-                    fieldLabel: 'Title',
+                    fieldLabel: 'Current hash',
                     labelWidth: 50
                 }
             }]
