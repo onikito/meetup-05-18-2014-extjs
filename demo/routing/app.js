@@ -22,7 +22,7 @@ Ext.application({
                 bodyPadding: 10,
                 items: {
                     xtype: 'textfield',
-                    fieldLabel: 'Current hash',
+                    fieldLabel: 'Current user id',
                     labelWidth: 150
                 }
             }]
