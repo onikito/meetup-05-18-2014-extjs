@@ -17,15 +17,13 @@ Ext.application({
             items: [{
                 xtype: 'panel',
                 title: 'Hash',
-                items: [{
-                    xtype: 'label',
-                    content: 'hash',
-                    style: {
-                        fontSize: 40
-                    },
-                    width: 500,
-                    height: 150
-                }]
+                width: 400,
+                height: 200,
+                items: {
+                    xtype: 'textfield',
+                    fieldLabel: 'Title',
+                    labelWidth: 50
+                }
             }]
         });
     }
