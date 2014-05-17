@@ -23,7 +23,7 @@ Ext.application({
                 items: {
                     xtype: 'textfield',
                     fieldLabel: 'Current hash',
-                    labelWidth: 50
+                    labelWidth: 150
                 }
             }]
         });
