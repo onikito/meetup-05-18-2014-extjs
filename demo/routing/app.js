@@ -16,12 +16,15 @@ Ext.application({
             },
             items: [{
                 xtype: 'panel',
+                title: 'Hash',
                 items: [{
                     xtype: 'label',
                     content: 'hash',
                     style: {
                         fontSize: 40
-                    }
+                    },
+                    width: 500,
+                    height: 150
                 }]
             }]
         });
