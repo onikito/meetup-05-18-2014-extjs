@@ -195,8 +195,7 @@
                 
                 <section>
                     <h3>Hash Parameter Formatting</h3>
-<pre><code>
-    routes : {
+<pre><code>    routes : {
         'user/:id' : {
             action     : 'onUser',
             conditions : {
@@ -209,8 +208,7 @@
                 
                 <section>
                     <h3>Route Handling</h3>
-<pre><code>
-    routes : {
+<pre><code>    routes : {
         'user/:id' : {
             before  : 'onBeforeUser',
             action  : 'onUser'
@@ -226,6 +224,29 @@
     },
     onUser : function(id) {...}
 </code></pre>
+                </section>
+
+                <section>
+                    <h3>Handling Unmatched Routes</h3>
+<pre><code>    Ext.application({
+        name : 'MyApp',
+        listen : {
+            controller : {
+                '#' : {
+                    unmatchedroute : 'onUnmatchedRoute'
+                }
+            }
+        },
+        onUnmatchedRoute : function(hash) {
+            //...
+        }
+    });
+</code></pre>
+                </section>
+
+                <section>
+                    <h3>Using Multiple Routes in a Single Hash</h3>
+                    <pre>`#user/1234|messages`</pre>
                 </section>
 
                 <section data-transition="linear">
