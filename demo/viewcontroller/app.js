@@ -10,12 +10,10 @@ Ext.onReady(function() {
         },
         items: [{
             xtype: 'usergrid',
-            width: 800,
-            height: 500
+            flex: 1
         },{
             xtype: 'usergrid',
-            width: 800,
-            height: 500
+            flex: 1
         }]
     });
 });
