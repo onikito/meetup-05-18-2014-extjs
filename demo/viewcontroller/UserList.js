@@ -1,5 +1,6 @@
 Ext.define('UserList', {
     extend: 'Ext.grid.Panel',
+    xtype: 'usergrid',
     controller: 'userlist',
 
     tbar: [{
