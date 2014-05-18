@@ -1,7 +1,10 @@
 Ext.onReady(function() {
     new Ext.container.Viewport({
         renderTo: Ext.getBody(),
-        layout: 'vbox',
+        layout: {
+            type: 'vbox',
+            align: 'stretch'
+        },
         style: {
             backgroundColor: 'gray'
         },
