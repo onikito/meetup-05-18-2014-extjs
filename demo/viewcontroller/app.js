@@ -1,7 +1,18 @@
 Ext.onReady(function() {
-    new UserList({
+    new Ext.container.Viewport({
         renderTo: Ext.getBody(),
-        width: 800,
-        height: 500
+        layout: 'vbox',
+        style: {
+            backgroundColor: 'gray'
+        },
+        items: [{
+            xtype: 'usergrid',
+            width: 800,
+            height: 500
+        },{
+            xtype: 'usergrid',
+            width: 800,
+            height: 500
+        }]
     });
 });
